@@ -23,7 +23,7 @@ git clone https://github.com/alex-karo/webpack-static-template block7
 cd block7
 ```
 
-Удалить папку .git  ...
+Удалить папку .git
 
 ```bash
 rm -rf .git
