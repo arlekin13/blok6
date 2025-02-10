@@ -1,10 +1,6 @@
 
-$bg_color:#f8f8f8;
-$button_color:#FF3E79;
-
-
 .header {
-    background-color: white;
+    background-color: $white;
     padding: 18px 16px;
     display: flex;
     justify-content: space-between;
@@ -23,7 +19,7 @@ $button_color:#FF3E79;
         justify-content: center;
         height: 40px;
         width: 40px;
-        background-color:$button_color;
+        background-color:$hot-pink;
         background-repeat: no-repeat;
         background-position: center;
         border: 0;
@@ -64,13 +60,13 @@ $button_color:#FF3E79;
             content: '';
             width: 2px;
             height: 40px;
-            background: #eaeaea;
+            background: $silver;
         }
         .header__burger-button:after {
             content: '';
             width: 2px;
             height: 40px;
-            background: #eaeaea;
+            background: $silver;
         }
         }
       

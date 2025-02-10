@@ -1,4 +1,5 @@
 
+$dark-grey:#7e7e82;
 
 .main{
     &__info{   
@@ -45,6 +46,15 @@
     &__status{
         background-image:url('/img/lupa.svg');
     }
+    &__navigation::before{
+        content: '';
+        height: 100%;
+        width: 24px;
+        position: absolute;
+        right: 0;
+        z-index: 1000;
+        background: linear-gradient(270deg, #f8f8f8 16.84%, rgba(248, 248, 248, 0) 100%);
+    }
     .icon{
         display: block;
         width: 40px;
@@ -59,13 +69,9 @@
     .container {
         max-width: 1660px;
         margin: 0 auto;
-        padding: 0 16px;
+        padding: 0 16px;}
 
-
-
-}
-
-@media screen and (min-width: 1250px) {
+@media screen and (min-width: 1120px) {
     .main__list_desktop {
         display: flex;
         list-style-type: none;
