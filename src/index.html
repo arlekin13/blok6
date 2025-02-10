@@ -12,19 +12,109 @@
   </head>
   <body>
  
-    <div class="wrapper">
+  <header class="header">
+    <div class="header__left"> 
+      <button class="header__burger-button">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="40" height="40" rx="20" fill="#FF3E79"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 13C11 12.4477 11.4477 12 12 12H28C28.5523 12 29 12.4477 29 13C29 13.5523 28.5523 14 28 14H12C11.4477 14 11 13.5523 11 13ZM11 20C11 19.4477 11.4477 19 12 19H20C20.5523 19 21 19.4477 21 20C21 20.5523 20.5523 21 20 21H12C11.4477 21 11 20.5523 11 20ZM12 26C11.4477 26 11 26.4477 11 27C11 27.5523 11.4477 28 12 28H24C24.5523 28 25 27.5523 25 27C25 26.4477 24.5523 26 24 26H12Z" fill="white"/>
+        </svg>
+      </button>
+      <a href="#" class="header__logo">
+          <img src="./img/CPS.png" alt="Logo">
+      </a>
+    </div> 
 
-      <header class="header">
-          <div class="container header__container">
-           
+      <div class="header__right">
+         <div class="header__contact">
+          <button class="header__button header__button--call">
+          <img src="./img/tel.svg" alt="Заказать звонок">
+        </button>
+        <button class="header__button header__button--chat">
+          <img src="./img/mes.svg" alt="Написать нам">
+        </button>
+        <button class="header__button header__button--profile">
+          <img src="./img/man.svg" alt="Профиль">
+        </button>
+      </div>       
+        
+      <div class="header__servise">  
+        <button class="header__button header__button--repair">
+        <img src="./img/grouprepair.svg" alt="Ремонт">
+        </button>
+         <button class="header__button header__button--search">
+        <img src="./img/search.svg" alt="Поиск">
+        </button>
+      </div>
+     </div>
+  
+</header>
+       
+
+<main class="main">
+
+ <div class="main__info container">
+        <h1 class="main__title">Услуги и сервисы</h1>
+
+    <ul class="main__list_desktop list-service">
+          <li class="main__service-item">
+            <button class="main__btn--info">
+              <span class="main__span">Оставить заявку</span> 
+              <span class="main__request icon"></span>           
+            </button>
+            </a>
+          </li>
+          <li class="main__service-item">
+            <button class="main__btn--info"> 
+              <span class="main__span">Статус ремонта</span>
+              <span class="main__status icon"></span>         
+            </button>
+          </li>
+      </ul>
+  </div>
+
+<nav class="main__navigation container">
+  <ul class="main__list list">
+    <li class="list__item active item"><a href="#">Ремонтируемые бренды</a></li>
+    <li class="list__item item"><a href="#">Ремонтируемые устройства</a></li>
+    <li class="list__item item"><a href="#">Цены на услуги</a></li>
+    <li class="list__item item"><a href="#">Адреса сервисных центров</a></li>
+    <li class="list__item item"><a href="#">Специальные цены</a></li>
+    <li class="list__item item"><a href="#">Отзывы</a></li>
+  </ul>
+</nav>
+
+
+
+</main>
+
+                 
+              <section class="firstblock">
+                  <div class="firstblock__info">
+                      <p class="firstblock__info-text">
+                      Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можетеотремонтировать свой ноутбук Dell с официальной гарантией производителя.<span class="firstblock__info-text--hidden-s"></br>
+                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</span>
+                    <span class="firstblock__info-text--hidden-m">, что подтверждаетбольшое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациями, в свою очередь, советуют нас родным и близким.</span>
+                  
+                  <div class="firstblock__readmore"> 
+                      <a href="#" class="firstblock__readmore-button"> 
+                          <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M6.50008 0.500076L4.00008 3.00008L1.50008 0.500076C1.22393 0.223933 0.776218 0.223933 0.500076 0.500076C0.223933 0.776218 0.223933 1.22393 0.500075 1.50008L3.29297 4.29297C3.68349 4.68349 4.31666 4.68349 4.70718 4.29297L7.50008 1.50008C7.77622 1.22393 7.77622 0.776218 7.50008 0.500076C7.22393 0.223933 6.77622 0.223933 6.50008 0.500076ZM6.50008 6.50008L4.00008 9.00008L1.50008 6.50008C1.22393 6.22393 0.776218 6.22393 0.500076 6.50008C0.223933 6.77622 0.223933 7.22393 0.500075 7.50008L3.29297 10.293C3.68349 10.6835 4.31666 10.6835 4.70718 10.293L7.50008 7.50008C7.77622 7.22393 7.77622 6.77622 7.50008 6.50008C7.22393 6.22393 6.77622 6.22393 6.50008 6.50008Z" fill="#41F6D7"/>
+                           </svg>
+                              <span class="firstblock__readmore-text">Читать далее</span>
+                      </a>
+                  </div>
+              </div>
+                  <div class="img">
+                      <img class="img_cps" src="./img/imgCPS.jpg" alt="logo320">
+              </div>   
+              </section>    
+              </div>
+                 </div> 
           </div>
       </header>
 
-      <main class="main">
-          <div class="container main__container">
-             
-          </div>
-      </main>
+     
 
       <section class="brands">
           <div class="container brands__container">
