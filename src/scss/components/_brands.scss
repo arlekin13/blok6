@@ -1,0 +1,194 @@
+.title-container {
+    margin: 0;
+    background: linear-gradient(to right, #f8f8f8, #fff);
+
+    .title-container__blog {
+        @media (min-width: 700px) {
+            padding: 16px 24px;
+        }
+    }
+}
+
+.brands__content,
+.type-technique__content {
+    width: 100%;
+    max-width: 1200px;
+    padding: 16px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 24px;
+        right: 0;
+        top: 0;
+        z-index: 10;
+        background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    }
+}
+
+.swiper {
+    margin: 0 -16px;
+    padding: 0 16px;
+
+    &-wrapper {
+        display: flex;
+    }
+
+    &-slide {
+        flex-shrink: 0;
+        height: 100%;
+        position: relative;
+        transition-property: transform;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        min-width: 240px;
+        min-height: 72px;
+        max-height: 72px;
+        border-radius: 6px;
+        border: 1px solid $silver;
+        background: $white;
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        &__link {
+            &::before {
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                margin-right: 34px;
+                content: "";
+                width: 7px;
+                height: 7px;
+                border-top: 2px solid $hot-pink;
+                border-right: 2px solid $hot-pink;
+                transform: rotate(45deg);
+            }
+
+            &::after {
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                margin-right: 16px;
+                content: "";
+                width: 40px;
+                height: 40px;
+                border: 2px solid $hot-pink;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    &-pagination {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: .3s opacity;
+        transform: translate3d(0, 0, 0);
+        z-index: 10;
+        left: 0;
+        margin-top: 20px;
+
+        &-bullet {
+            width: 12px;
+            height: 12px;
+            margin: 0 5px;
+            border-radius: 50%;
+            background: rgba(221, 221, 221, 1);
+
+            &-active {
+                background: rgba(181, 182, 188, 1);
+            }
+        }
+    }
+}
+
+.brand-logo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 16px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.brands__all {
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+    .brands__content {
+        padding: 24px;
+    }
+
+    .swiper-wrapper {
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;;
+        gap: 16px 8px;
+    }
+
+    .swiper-slide {
+       
+        margin-right: 0;
+    }
+
+    .swiper-pagination {
+        display: none;
+    }
+
+    .brands__all{
+        display: flex;
+        height: 24px;
+        margin-top: 16px;
+        gap: 8px;
+        align-items: center;
+        border: none;
+        background-color: $snow-white;
+    }
+
+    .swiper-slide--hidden {
+        display: none;
+    }
+
+    .brands__img
+    {
+        transition: transform 0.3s ease-in-out;
+
+        &.rotate {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+@media (min-width: 1120px) {
+    body {
+        width: auto;
+        min-width: 1120px;
+        height: auto;
+    }
+
+    .swiper-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px 16px;
+    }
+
+    .swiper-slide--visible {
+        display: flex;
+    }
+}
