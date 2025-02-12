@@ -1,9 +1,12 @@
 
 body{
     background-color: $snow-white;
-    font-family: 'TTLakesB', sans-serif;
+    font-family:'TTLakesR', sans-serif;
     font-size: 16px;
+}
 
+h1,h2{
+    font-family:'TTLakesB', sans-serif;
 }
 .main{
     &__info{   
@@ -22,8 +25,15 @@ body{
         left: 0px;
         top: 23px;
     }
-
     
+    
+    }
+    &__title{
+        
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: -0.6px;
+
     }
     &__list_desktop{
         display: none;

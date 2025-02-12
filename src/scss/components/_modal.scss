@@ -1,0 +1,156 @@
+
+.aside-background {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $white;
+    opacity: 0.9605;
+    z-index: 9999;
+&--active {
+    display: block;
+  }
+}
+
+.modal{
+    
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    padding-top: 104px;
+    min-width: 320px;
+    -webkit-box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+     -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+  -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+    background-color: $white;
+    z-index: 9999;
+
+    
+    @media screen and (min-width: 560px) {
+        width: 440px;
+        padding-top: 40px;
+}
+    &__form
+    {   
+        position: relative;
+        display: block;
+        min-width: 320px;
+        margin: 0 auto;
+        padding: 0 16px;
+        background-color: #fff;
+      
+    }
+    &__title{
+        margin: 0;
+        margin-bottom: 24px;
+        color: $charcoal-black;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -0.6px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 32px;
+            border-left: 4px solid #41f6d7;
+            border-radius: 0 8px 8px 0;
+            left: 0px;
+          }
+    }
+    &__close-button{
+        position: absolute;
+        top: 24px;
+        left: 16px;
+        background-image: url(/block7/src/img/close.svg);
+        background-color: $hot-pink;
+        @media screen and (min-width: 560px) {
+            top: 30px;
+            left: -65px;
+          }
+    }
+    &__form-container{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        row-gap: 16px;
+        
+        
+    }
+    &__textarea{
+        box-sizing: border-box;
+        width: 100%;
+        height: 48px;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        padding: 12px 16px;
+        border-radius: 8px;
+        border: 1px solid $silver;
+        color: $silver;
+        background-color: $white;
+        font-family: 'TTLakesR';
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+
+    }
+    #message {
+        height: 118px;
+      }
+
+    &__button{
+        max-width: 136px;
+        height: 32px;
+        margin: 0 auto;
+        margin-right: 0;
+        display: flex  ;
+         color: rgb(255, 255, 255);
+         background-color:$hot-pink;
+         background-image: url(../img/arrow-submit.svg);
+        font-family: 'TTLakesB';
+        font-size: 12px;
+        letter-spacing: -0.15px;
+        text-align: right;
+          background-repeat: no-repeat;
+         padding: 8px 40px 8px 13px;
+        border-radius: 16px;
+        background-position: right 16px bottom 11px;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover{transform: scale(1.05);}
+
+    }
+
+    &--call{
+        display: none;
+       
+    }
+   
+    &.modal--open {
+        display: block; 
+    }
+}
+.typography{
+    font-family: 'TTLakesM';
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: $dark-grey;
+    padding-bottom: 16px;
+    padding-top: 16px;
+
+    &__link{
+        color: $hot-pink;
+
+    }
+}
+
+
+
