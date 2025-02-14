@@ -1,22 +1,22 @@
 .title-container {
     margin: 0;
     background: linear-gradient(to right, #f8f8f8, #fff);
-
-
-}
-.title-container__blog {
+    &__blog {
    
-    font-family: "TTLakesR", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: rgb(126, 126, 130);
-    padding: 16px;
-
-    @media (min-width: 700px) {
-        padding: 16px 24px;
+        font-family: "TTLakesR", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: rgb(126, 126, 130);
+        padding: 16px;
+          
+        @media (min-width: 700px) {
+            padding: 16px 24px;
+        }
     }
+
 }
+
 
 .brands__content,
 .type-technique__content {
@@ -36,7 +36,8 @@
     }
 }
 
-.swiper {
+.swiper,
+.type-technique__swiper {
     margin: 0 -16px;
     padding: 0 16px;
 
@@ -135,8 +136,14 @@
     margin-bottom: auto;
 }
 
-.brands__all {
+.brands__all,
+.type-technique__all {
     display: none;
+    font-family: "TTLakesM", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+
 }
 
 
@@ -160,7 +167,8 @@
         display: none;
     }
 
-    .brands__all{
+    .brands__all
+    {
         display: flex;
         height: 24px;
         margin-top: 16px;
