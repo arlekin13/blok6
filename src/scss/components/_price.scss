@@ -1,62 +1,67 @@
 .price{
+  padding-bottom: 40px;
+  
 &__content{
-    margin-top: 24px;
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  padding: 16px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 16px 16px 16px;
+  padding-bottom: 24px;
+  &::before {
+    content: '';
+    height: 100%;
+    width: 24px;
+    position: absolute;
+    right: 0;
+    z-index: 1000;
+    background: linear-gradient(270deg, #f8f8f8 16.84%, rgba(248, 248, 248, 0) 100%);
 }
+}  
+
 &__item{
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     flex-direction: column;
-    row-gap: 16px;
     border-collapse: collapse;
     align-items: center;
     border: none;
-    background-color: white;
-     font-family: "TTLakesR", sans-serif;
+    font-family: "TTLakesR", sans-serif;
     min-height: 200px;
+   
     padding: 16px;
-    background: rgb(255, 255, 255);
-    flex-shrink: 0;
-    height: 100%;
+
     }
-         
-      &__content {
-        display: block;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        align-self: start;
-        -moz-column-gap: 20px;
-        -webkit-column-gap: 20px;
-        column-gap: 10px;
-         border-collapse: collapse;
-      }
-      &__title{
-        font-size: 14px;
-       line-height: 16px;
-       color: rgb(126, 126, 130);
-
-      }
-
-      &__desc{
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
+   
+  &__text-box{
+    
+    align-self: start;
+    flex-direction: column;
+  } 
+ 
+  &__title{
+    font-size: 14px;
+    line-height: 16px;
+    color: rgb(126, 126, 130);
+  }
+  
+  &__desc{
+    display: inline-block;
         font-size: 14px;
         font-weight: 400;
         line-height: 18px;
         letter-spacing: 0.2px;
      }
 
-     &__button{
+  &__button{
             position: absolute;
             right: 16px;
             bottom: 16px;
             max-width: 136px;
             height: 32px;
              display: flex  ;
-             color: rgb(255, 255, 255);
+             color: $white;
              background-color:$hot-pink;
              background-image: url(../img/arrow-submit.svg);
             font-family: 'TTLakesB';
@@ -72,9 +77,49 @@
             &:hover{transform: scale(1.05);}
     
         }
-     
+  
+  &__offer{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    padding: 0 16px;
+
+    &--desc{
+      max-width: 421px;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+    
+      padding-top: 16px;
+       
+    }
+  
+    &--button{
+    
+      font-family: 'TTLakesM';
+      margin-top: 16px;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      text-align: left;
+      width: 192px;
+      margin-top: 16px;
+
+      @media screen and (min-width: 500px) 
+       {width: 320px;}      
+            
+             & svg{
+              margin-left: 10px;  
+              flex-shrink: 0;
+      }
+      &:hover svg{
+        transform: translate(5px);
+        transition: transform 0.5s;
+      }
+    }   
+  }
+  
 }
-
-
-
 

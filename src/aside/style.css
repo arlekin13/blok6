@@ -1,26 +1,5 @@
 
 
-@font-face {
-    font-family:"TTLakesR" ;
-    src: url("./") format("woff");
-    font-weight: normal;
-    font-style: normal;
-    
-}
-@font-face {
-    font-family:"TTLakesM" ;
-    src: url("./fonts/TTLakes-Medium.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-    
-}@font-face {
-    font-family:"TTLakesB" ;
-    src: url("./fonts/TTLakes-Bold.woff") format("woff");
-    font-weight: normal;
-        font-style: normal;
-}
-
-
 ul,li{
 	list-style: none;}
 *,
@@ -56,6 +35,7 @@ body {
     padding-bottom: 32px;
     padding-right: 24px;
     background-color: #ffffff;
+    
     }
 .aside__wrapper{
     }

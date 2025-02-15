@@ -1,0 +1,171 @@
+
+.aside {
+display: none;
+
+  @media screen and (min-width: 1366px){
+    display: flex;
+  }
+
+     
+    
+&__wrapper{
+    
+    flex-direction: column;
+    position:fixed;
+    width: 320px;
+    height: 100%;
+    min-height: 620px;
+    padding-top: 23px;
+    padding-left: 24px;
+    padding-bottom: 32px;
+    padding-right: 24px;
+    background-color: #ffffff;
+    }
+
+&__logo{
+    margin-left: 16px;
+ }  
+
+&__nav{
+    margin-top: 46px;
+  }  
+
+&__contacts{
+    width: 196px;
+    height: 124px;
+    margin-top: auto;
+} 
+
+&__connection{
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+    gap: 12px; 
+    } 
+
+&__language-switcher {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+}
+.button--pink{
+    height: 40px;
+    width: 40px;
+    background-color:$hot-pink;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
+    border-radius: 50%;
+
+    &:hover{
+        transition-duration: 0.3s;
+        scale:1.05 ;
+        } 
+}
+
+.burger__button-close{
+    background-image: url(../img/close.svg);
+ }
+
+ .button-search{
+     background-image: url(../img/search.svg);
+ }
+
+
+.nav{
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+     }
+
+     &__link{
+        color: #000;
+        position: relative;
+        display: inline-block;
+        letter-spacing: -0.2px;  
+
+        &--active{
+            color:$dark-grey
+            }
+
+        &--active::before,
+        &:hover::before{
+            content: "";
+            position: absolute;
+            right: 100%;
+            margin-right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: inline-block;
+            width: 4px;
+            height: 32px;
+            border-radius: 0px 50px 50px 0px;
+            background-color: #41f6d7;
+        }
+
+        &:hover{
+            color:$dark-grey
+        }
+
+    }
+} 
+
+.contacts{
+    &__buttons {
+    display: flex; 
+    gap: 16px; 
+    }
+
+    &--button{
+        display: inline-flex; 
+    }
+
+    &__email{
+        color: #000;
+        letter-spacing: -0.2px;  
+    }
+
+    &__tel{
+        color: #000;
+        font-family: "TTLakesB";
+        font-size: 24px;
+        letter-spacing: -0.6px;
+        }
+}
+
+
+
+.button--tel{
+        background-image: url(../img/tel.svg);
+              
+        }
+     
+.button--message{
+        background-image: url(../img/mes.svg);
+        }
+   
+.button--profile{
+        background-image: url(../img/man.svg);
+        }
+        
+
+
+.language a {
+   text-decoration: none; 
+   color: inherit; 
+   cursor: pointer; 
+}
+
+.language-active{
+    color:$dark-grey;
+}
+
+.language a:hover,
+.language a.active{
+    color:$dark-grey;
+  
+}

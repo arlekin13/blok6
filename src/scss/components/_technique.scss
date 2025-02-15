@@ -1,7 +1,25 @@
 .type-technique{
     &__content{
         display: block;
+        width: 100%;
+        max-width: 1200px;
+        padding: 16px;
+        width: 100%;
+        max-width: 1200px;
+        padding: 0 16px 16px 16px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 24px;
+        right: 0;
+        top: 0;
+        z-index: 10;
+        background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
     }
+    }  
+
     &__item{
         
         min-height: 160px;

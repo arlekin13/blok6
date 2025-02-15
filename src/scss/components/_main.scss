@@ -9,6 +9,11 @@ h1,h2{
     font-family:'TTLakesB', sans-serif;
 }
 .main{
+    @media screen and (min-width: 1366px) {
+        
+        padding-left: 320px;
+      
+  }
     &__info{   
         display: flex;
         position: relative;
@@ -29,8 +34,7 @@ h1,h2{
     
     }
     &__title{
-        
-        font-size: 28px;
+       font-size: 28px;
         line-height: 40px;
         letter-spacing: -0.6px;
 
@@ -52,8 +56,17 @@ h1,h2{
         align-items: center;
         justify-content: center;
         column-gap: 8px;
+        &:hover{
+            scale: 1.05;
+        }
     }
-    
+    &__span{
+        font-family: 'TTLakesM';
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+
+    }
     &__request{
         background-image:url('/img/grouprepair.svg');
     }
@@ -69,15 +82,7 @@ h1,h2{
         z-index: 1000;
         background: linear-gradient(270deg, #f8f8f8 16.84%, rgba(248, 248, 248, 0) 100%);
     }
-    .icon{
-        display: block;
-        width: 40px;
-        height: 40px;
-        background-color: $hot-pink;
-        background-repeat: no-repeat;
-        background-position: center;
-        border-radius: 100%;
-    }
+    
 
 }
     .container {

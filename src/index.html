@@ -27,13 +27,12 @@
 
       <div class="header__right">
          <div class="header__contact">
-          <button class="header__button header__button--call">
-          <img src="./img/tel.svg" alt="Заказать звонок">
+          <button class="button--pink button--tel">
+          </button>
+        <button class="button--pink button--message">
+         
         </button>
-        <button class="header__button header__button--chat">
-          <img src="./img/mes.svg" alt="Написать нам">
-        </button>
-        <button class="header__button header__button--profile">
+        <button class="button--pink button--profile">
           <img src="./img/man.svg" alt="Профиль">
         </button>
       </div>       
@@ -50,6 +49,79 @@
   
 </header>
        
+<div class="aside">
+  <div class="aside__wrapper">
+      <header class="aside__header">
+          <button class="aside__button burger__button-close button--pink"></button>
+              <img src="./img/CPS.png" alt="Логотип" class="aside__logo">
+          <button class="aside__button button-search button--pink"></button>
+      </header>
+  
+
+  <nav class="aside__nav">
+      <ul class="nav__list">
+          <li>
+              <a href="#" class="nav__link nav__link--active">Ремонт техники</a>
+          </li>
+          <li>
+              <a href="#" class="nav__link">Услуги и сервисы</a>
+          </li>
+          <li>
+              <a href="#" class="nav__link">Корпоративным клиентам</a>
+          </li>
+          <li>
+              <a href="#" class="nav__link">Продавцам техники</a>
+          </li>
+          <li>
+              <a href="#" class="nav__link">Партнерам</a>
+          </li>
+          <li>
+              <a href="#" class="nav__link">Производителям</a>
+          </li>
+          <li>
+              <a href="#" class="nav__link">Наши сервисные центры</a>
+          </li>
+          <li>
+              <a href="#" class="nav__link">Контакты</a>
+          </li>
+
+      </ul>
+
+  </nav>
+
+  <div class="aside__contacts">
+          <ul class="contacts__buttons">
+              <li class="contacts__buttons--button ">
+                  <button class="button--tel button--pink"></button>
+              </li>
+              <li class="contacts__buttons--button ">
+                  <button class="button--message button--pink"></button>
+              </li>
+              <li class="contacts__buttons--button ">
+                  <button class="button--profile button--pink"></button>
+              </li>
+          </ul>  
+      
+      <div class="aside__connection">
+          <a href="mailto:mail@cps.com" class="contacts__email">mail@cps.com</a>
+          <a href="tel:8 800 890 8900" class="contacts__tel">8 800 890 8900</a>  
+      </div>
+  </div>
+
+  <ul class="aside__language-switcher">
+      <li class="language language-active">
+          <a href="#" data-lang="ru">RU</a>
+      </li>
+      <li class="language">
+         <a href="#" data-lang="en">EN</a>
+      </li>
+      <li class="language">
+          <a href="#" data-lang="cn">CN</a>
+      </li>
+  </ul>
+</div> 
+</div>
+
 
 <main class="main">
 
@@ -58,16 +130,16 @@
 
     <ul class="main__list_desktop list-service">
           <li class="main__service-item">
-            <button class="main__btn--info">
+            <button class="main__btn--info ">
               <span class="main__span">Оставить заявку</span> 
-              <span class="main__request icon"></span>           
+              <span class="main__request button--pink"></span>           
             </button>
             </a>
           </li>
           <li class="main__service-item">
             <button class="main__btn--info"> 
               <span class="main__span">Статус ремонта</span>
-              <span class="main__status icon"></span>         
+              <span class="main__status button--pink"></span>         
             </button>
           </li>
       </ul>
@@ -107,7 +179,7 @@
 
 
       <section class="brands">
-        <div class="title-container container">
+        <div class="title-container">
           <h2 class="title-container__blog">
               Ремонт техники различных брендов
           </h2>   
@@ -238,19 +310,111 @@
       Цены на услуги
     </h2>
   </div>
+ 
   <div class="price__content">
     <div class="swiper">
         <ul class="swiper-wrapper price__list">
             <li class="swiper-slide price__item">
-              <div class="price__content">
+              <div class="price__text-box">
                 <h3 class="price__title">Ремонтные услуги</h3>
                 <p class="price__desc">Тестирование с выдачей технического заключения</p>
               </div>
-              <div class="price__content">
+              <div class="price__text-box">
                 <h3 class="price__title">Цена</h3>
                 <p class="price__desc">Бесплатно</p>
               </div>
-              <div class="price__content">
+              <div class="price__text-box">
+                <h3 class="price__title">Срок</h3>
+                <p class="price__desc">30-120 мин</p>
+              </div>
+
+            <button class="price__button">
+              ЗАКАЗАТЬ
+            </button>
+            </li>
+
+            <li class="swiper-slide price__item">
+              <div class="price__text-box">
+                <h3 class="price__title">Ремонтные услуги</h3>
+                <p class="price__desc">Диагностика</p>
+              </div>
+              <div class="price__text-box">
+                <h3 class="price__title">Цена</h3>
+                <p class="price__desc">1 000 ₽</p>
+              </div>
+              <div class="price__text-box">
+                <h3 class="price__title">Срок</h3>
+                <p class="price__desc">30-120 мин</p>
+              </div>
+
+            <button class="price__button">
+              ЗАКАЗАТЬ
+            </button>
+            </li>
+            <li class="swiper-slide price__item">
+              <div class="price__text-box">
+                <h3 class="price__title">Ремонтные услуги</h3>
+                <p class="price__desc">Замена полифонического динамика</p>
+              </div>
+              <div class="price__text-box">
+                <h3 class="price__title">Цена</h3>
+                <p class="price__desc">1 000 ₽</p>
+              </div>
+              <div class="price__text-box">
+                <h3 class="price__title">Срок</h3>
+                <p class="price__desc">30-120 мин</p>
+              </div>
+
+            <button class="price__button">
+              ЗАКАЗАТЬ
+            </button>
+            </li>
+            <li class="swiper-slide price__item">
+              <div class="price__text-box">
+                <h3 class="price__title">Ремонтные услуги</h3>
+                <p class="price__desc">Замена дисплея</p>
+              </div>
+              <div class="price__text-box">
+                <h3 class="price__title">Цена</h3>
+                <p class="price__desc">1 000 ₽</p>
+              </div>
+              <div class="price__text-box">
+                <h3 class="price__title">Срок</h3>
+                <p class="price__desc">30-120 мин</p>
+              </div>
+
+            <button class="price__button">
+              ЗАКАЗАТЬ
+            </button>
+            </li>
+            <li class="swiper-slide price__item">
+              <div class="price__text-box">
+                <h3 class="price__title">Ремонтные услуги</h3>
+                <p class="price__desc">Замена программного обеспечения</p>
+              </div>
+              <div class="price__text-box">
+                <h3 class="price__title">Цена</h3>
+                <p class="price__desc">1000 ₽</p>
+              </div>
+              <div class="price__text-box">
+                <h3 class="price__title">Срок</h3>
+                <p class="price__desc">30-120 мин</p>
+              </div>
+
+            <button class="price__button">
+              ЗАКАЗАТЬ
+            </button>
+            </li>
+            <li class="swiper-slide price__item">
+              <div class="price__text-box">
+                <h3 class="price__title">Ремонтные услуги</h3>
+                <p class="price__desc">Замена полифонического динамика</p>
+              </div>
+              <div class="price__text-box">
+                <h3 class="price__title">Цена</h3>
+                <p class="price__desc">1000 ₽</p>
+              </div>
+              <div class="price__text-box">
                 <h3 class="price__title">Срок</h3>
                 <p class="price__desc">30-120 мин</p>
               </div>
@@ -260,7 +424,20 @@
             </button>
             </li>
         </ul>
-
+        <div class="swiper-pagination"></div>
+    </div>
+    
+  </div>
+  <div class="price__offer">
+    <p class="price__offer--desc">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
+    <button class="price__offer--button">
+      Получить коммерческое предложение
+      <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.294005 8.23587C-0.0915265 8.62552 -0.091526 9.25291 0.294006 9.64255L0.340474 9.68952C0.73184 10.0851 1.37081 10.0851 1.76218 9.68952L5.70619 5.7034C6.09172 5.31376 6.09172 4.68637 5.70619 4.29672L1.76218 0.310604C1.37081 -0.084939 0.73184 -0.084939 0.340474 0.310604L0.294006 0.357569C-0.091526 0.747216 -0.091526 1.37461 0.294006 1.76425L3.49563 5.00006L0.294005 8.23587Z" fill="#FF3E79"/>
+        </svg>
+        
+    </button>
+  </div>
 </section>
 
 

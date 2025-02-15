@@ -1,6 +1,8 @@
 .title-container {
     margin: 0;
+    margin-bottom: 16px;
     background: linear-gradient(to right, #f8f8f8, #fff);
+   
     &__blog {
    
         font-family: "TTLakesR", sans-serif;
@@ -18,13 +20,13 @@
 }
 
 
-.brands__content,
-.type-technique__content {
+.brands__content
+{
     width: 100%;
     max-width: 1200px;
-    padding: 16px;
+    padding: 0 16px 16px 16px;
 
-    &::after {
+    &::before {
         content: '';
         position: absolute;
         height: 100%;
