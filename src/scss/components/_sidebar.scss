@@ -6,10 +6,8 @@ display: none;
     display: flex;
   }
 
-     
-    
 &__wrapper{
-    
+    display: flex;
     flex-direction: column;
     position:fixed;
     width: 320px;
@@ -19,7 +17,9 @@ display: none;
     padding-left: 24px;
     padding-bottom: 32px;
     padding-right: 24px;
-    background-color: #ffffff;
+    background-color: $white;
+    justify-content: space-between;
+    
     }
 
 &__logo{

@@ -18,7 +18,11 @@
     right: 0;
     z-index: 1000;
     background: linear-gradient(270deg, #f8f8f8 16.84%, rgba(248, 248, 248, 0) 100%);
-}
+    }
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
 }  
 
 &__item{
@@ -29,9 +33,8 @@
     border: none;
     font-family: "TTLakesR", sans-serif;
     min-height: 200px;
-   
+    width: 260px;
     padding: 16px;
-
     }
    
   &__text-box{
@@ -43,7 +46,7 @@
   &__title{
     font-size: 14px;
     line-height: 16px;
-    color: rgb(126, 126, 130);
+    color: $dark-grey;
   }
   
   &__desc{
@@ -54,7 +57,9 @@
         letter-spacing: 0.2px;
      }
 
-  &__button{
+  &__button, 
+  .button-order
+  {
             position: absolute;
             right: 16px;
             bottom: 16px;
@@ -91,7 +96,6 @@
       font-weight: 400;
       line-height: 20px;
       letter-spacing: 0.2px;
-    
       padding-top: 16px;
        
     }
@@ -120,6 +124,89 @@
       }
     }   
   }
+
+  &__table{
+    display: none;
+    border: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+
+    &-list{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 16px 24px;
+      color:$dark-grey;
+      font-family: 'TTLakesM';
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0px;
+    }
+
+    &-title{
+      font-family: 'TTLakesR';
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0px;
+    }
+
+  }
   
+  &__table-content{
+    padding: 0 24px;
+    border-radius: 6px;
+    background-color:$white;
+
+  }
+
+  &__service-item{
+    border-bottom: 1px solid $silver;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
 }
 
+.item{
+
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    padding: 23px 0;
+    border-collapse: collapse;
+    position: relative;
+    }
+
+  &__desc{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    
+
+  }
+}
+
+.first-column{
+  width: 348px;
+  @media screen and (min-width: 768px) {
+    min-width: 348px;
+  }
+}
+
+.second-column{
+width: 74px;
+}
+.third-column{
+width: 81px;
+}
+.fourth-column{
+  
+width: 119px;
+}

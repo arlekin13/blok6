@@ -8,6 +8,10 @@ body{
 h1,h2{
     font-family:'TTLakesB', sans-serif;
 }
+
+section{
+    border-top: 1px solid  rgba(217, 255, 245, 1);
+}
 .main{
     @media screen and (min-width: 1366px) {
         
@@ -89,7 +93,7 @@ h1,h2{
         max-width: 1660px;
         margin: 0 auto;
         padding: 0 16px;
-        border-top: 1px solid  rgba(217, 255, 245, 1);
+       
         
     }
 
