@@ -197,10 +197,10 @@
     }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 1366px) {
     body {
         width: auto;
-        min-width: 1120px;
+        min-width: 1366px;
         height: auto;
     }
 
@@ -209,8 +209,8 @@
     }
     @media (min-width: 1366px) {
     .swiper-wrapper--grid {
-        
-        column-gap: 16px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 8px;
         
     }
 }

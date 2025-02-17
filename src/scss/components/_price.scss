@@ -162,10 +162,7 @@
   }
 
   &__service-item{
-    border-bottom: 1px solid $silver;
-    &:last-child {
-      border-bottom: none;
-    }
+    
   }
 
 }
@@ -179,6 +176,10 @@
     padding: 23px 0;
     border-collapse: collapse;
     position: relative;
+    border-bottom: 1px solid $silver;
+    &:last-child {
+      border-bottom: none;
+    }
     }
 
   &__desc{

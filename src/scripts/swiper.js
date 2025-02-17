@@ -39,3 +39,26 @@ else
 }
 
 });
+
+
+const showAllButtonT = document.querySelector('.type-technique__all');
+const activeItems = document.querySelectorAll('.type-technique__item--active');
+let allVisibleT = false;
+
+showAllButtonT.addEventListener('click',() => {
+   allVisibleT = !allVisibleT;
+    activeItems.forEach(item => {
+      item.classList.toggle('visible', allVisibleT);
+
+    });
+
+const showAllSpanT = document.querySelector('.type-technique__span');
+const showAllImgT = document.querySelector('.type-technique__img');
+if (showAllSpanT) {
+  showAllSpanT.textContent = allVisibleT ? 'Скрыть' : 'Показать все';
+}
+if (showAllImgT) {
+  showAllImgT.style.transform = allVisibleT ? 'rotate(180deg)' : 'rotate(0deg)';
+}
+
+});

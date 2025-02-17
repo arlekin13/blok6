@@ -34,8 +34,7 @@ section{
         left: 0px;
         top: 23px;
     }
-    
-    
+        
     }
     &__title{
        font-size: 28px;
@@ -97,7 +96,7 @@ section{
         
     }
 
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1366px) {
     .main__list_desktop {
         display: flex;
         list-style-type: none;
