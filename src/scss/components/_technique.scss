@@ -2,10 +2,9 @@
     &__content{
         display: block;
         width: 100%;
-        padding: 16px;
-        
-        
+        padding: 16px;      
         padding: 0 16px 16px 16px;
+        overflow: hidden;
         @media (min-width: 768px) {
            
                 padding: 0 8px 24px 24px;
@@ -25,13 +24,15 @@
     &__list{
         @media screen and (min-width:768px) {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
             column-gap: 8px;
             row-gap: 16px;
             margin-bottom: 24px; 
+            overflow: hidden;
+            
         }
         @media screen and (min-width:1366px) {
-           grid-template-columns: 1fr 1fr 1fr 1fr;
+           grid-template-columns: repeat(4, 1fr);
             
         }
     }
@@ -41,16 +42,19 @@
         max-height: 160px;
         padding: 16px;
 
-        &--hidden{
-            display: none;
-            @media screen and (min-width:1366px) {
-                display: block;
-                 
-             }
-        }
+        // &--hidden{
+        //     display: block;
+        //     @media screen and (max-width:320px) {
+        //         display: block;
+        //     }
+           
+        // }
 
         &--active{
           display: none;
+          @media screen and (max-width:768px) {
+            display: block;
+        }
           &.visible {
             display: grid; 
         }

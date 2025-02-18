@@ -43,12 +43,14 @@ else
 
 const showAllButtonT = document.querySelector('.type-technique__all');
 const activeItems = document.querySelectorAll('.type-technique__item--active');
+
 let allVisibleT = false;
 
 showAllButtonT.addEventListener('click',() => {
    allVisibleT = !allVisibleT;
     activeItems.forEach(item => {
       item.classList.toggle('visible', allVisibleT);
+    
 
     });
 
