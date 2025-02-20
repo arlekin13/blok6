@@ -1,36 +1,26 @@
 
-.aside-background {
-    position: fixed;
-    display: none;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $white;
-    opacity: 0.9605;
-    z-index: 9999;
-&--active {
-    display: block;
-  }
-}
 
 .modal{
-    
     position: fixed;
     display: none;
-    width: 100%;
     height: 100%;
     top: 0;
-    right: 0;
+    right: -100%;
     padding-top: 104px;
     min-width: 320px;
-    -webkit-box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+    transition: right 0.3s ease;
+    background-color: $white;
+    z-index: 99991;
+
+    &--open {
+        display: block; 
+        right: 0;  
+        -webkit-box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
      -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
     box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
   -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
-    background-color: $white;
-    z-index: 9999;
-
+    }
+    
     
     @media screen and (min-width: 560px) {
         width: 440px;
@@ -128,14 +118,9 @@
 
     }
 
-    &--call{
-        display: none;
-       
-    }
+
    
-    &.modal--open {
-        display: block; 
-    }
+    
 }
 .typography{
     font-family: 'TTLakesM';
@@ -153,4 +138,18 @@
 }
 
 
-
+.aside-background {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $white;
+    opacity: 0.9605;
+    z-index: 1000;
+   
+&--visible {
+    display: block;
+  }
+}

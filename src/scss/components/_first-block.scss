@@ -17,6 +17,9 @@
     margin-bottom: 16px;
     color: rgb(27, 28, 33);
     overflow: hidden;
+    &--active{
+        height: 100%;
+    }
    }  
    
    
@@ -54,12 +57,12 @@
         width: 46.5%;
         margin-bottom: 0px;
         padding: 0px;}
-    .first-block__info-text{
-        height: 160px;
-    }
+    
      .first-block__image{
         width: 50%;
         border-radius: 5px;
     }
 
 }
+.rotate {
+    transform: rotate(180deg);}

@@ -1,15 +1,15 @@
 
 .aside {
-
+    display: flex;
     position: fixed;
     top: 0;
     left: -100%;  
     transition: left 0.3s ease; 
-    z-index: 99999; 
+    z-index: 9999; 
     
 
   @media screen and (min-width: 1366px){
-    display: flex;
+    
     left: 0; 
   
   }

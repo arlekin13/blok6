@@ -64,3 +64,116 @@ if (showAllImgT) {
 }
 
 });
+
+
+// Бургер-меню
+const burgerOpen = document.querySelector('.header__burger-button');
+const burgerClose = document.querySelector('.burger__button-close');
+const asidePanel = document.querySelector('.aside');
+const asideBackground = document.querySelector('.aside__background');
+
+const modalChatPanel = document.querySelector('.modal--chat');
+const modalTelPanel = document.querySelector('.modal--call');
+const modalCloseButtons = document.querySelectorAll('.modal__close-button');
+
+
+function closeBurgerMenu() {
+  asidePanel.classList.remove('aside--visible');
+  asideBackground.classList.remove('aside__background--visible');
+  document.body.style.overflow = '';
+}
+
+
+function openModal(modal) {
+  closeBurgerMenu(); //
+  modal.classList.add('modal--open');
+  asideBackground.classList.add('aside__background--visible');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  modalChatPanel.classList.remove('modal--open');
+  modalTelPanel.classList.remove('modal--open');
+  asideBackground.classList.remove('aside__background--visible');
+  document.body.style.overflow = '';
+}
+
+
+burgerOpen.addEventListener('click', () => {
+  asideBackground.classList.add('aside__background--visible');
+  asidePanel.classList.add('aside--visible');
+  document.body.style.overflow = 'hidden';
+
+
+  const modalChatOpen = asidePanel.querySelector('.button--message');
+  const modalTelOpen = asidePanel.querySelector('.button--tel');
+
+
+  if (modalChatOpen) {
+    modalChatOpen.addEventListener('click', () => {
+      openModal(modalChatPanel);
+    });
+  }
+
+  if (modalTelOpen) {
+    modalTelOpen.addEventListener('click', () => {
+      openModal(modalTelPanel);
+    });
+  }
+});
+
+
+burgerClose.addEventListener('click', closeBurgerMenu);
+
+asideBackground.addEventListener('click', closeBurgerMenu);
+
+modalCloseButtons.forEach(button => {
+  button.addEventListener('click', closeModal);
+});
+
+asideBackground.addEventListener('click', closeModal);
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    closeModal();
+  }
+});
+
+//модалки
+const modalChatOpen =document.querySelector('.button--message');
+const modalTelOpen =document.querySelector('.button--tel');
+
+function openModal(modal){
+    closeBurgerMenu();
+    modal.classList.add('modal--open');
+    asideBackground.classList.add('aside__background--visible');
+    document.body.style.overflow = 'hidden';
+   
+}
+
+function closeModal(){
+modalChatPanel.classList.remove('modal--open');
+modalTelPanel.classList.remove('modal--open');
+asideBackground.classList.remove('aside__background--visible');
+document.body.style.overflow = '';
+}
+
+if (modalChatOpen) {
+    modalChatOpen.addEventListener('click', () => {
+      openModal(modalChatPanel);
+    });
+  }
+  
+  if (modalTelOpen) {
+    modalTelOpen.addEventListener('click', () => {
+      openModal(modalTelPanel);
+    });
+  }
+
+modalCloseButtons.forEach(button =>{
+    button.addEventListener('click', closeModal);
+});
+
+asideBackground.addEventListener('click', closeModal);
+
+

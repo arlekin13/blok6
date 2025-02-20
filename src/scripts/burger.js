@@ -20,3 +20,4 @@ asideBackground.addEventListener('click', () => {
     asideBackground.classList.remove('aside__background--visible'); // Скрываем фон
     document.body.style.overflow = '';
 });
+

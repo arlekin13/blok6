@@ -42,13 +42,16 @@
         max-height: 160px;
         padding: 16px;
 
-        // &--hidden{
-        //     display: block;
-        //     @media screen and (max-width:320px) {
-        //         display: block;
-        //     }
+        &--hidden{
+            display: block;
+            @media screen and (min-width:768px) {
+                display: none;
+            }
+            @media screen and (min-width:1366px) {
+                display: block;
+            }
            
-        // }
+        }
 
         &--active{
           display: none;
